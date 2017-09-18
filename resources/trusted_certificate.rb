@@ -44,6 +44,8 @@ action_class do
       '/usr/local/share/ca-certificates'
     when 'suse'
       '/etc/pki/trust/anchors/'
+    when 'arch'
+      '/etc/ca-certificates/trust-source/anchors'
     else # probably RHEL
       '/etc/pki/ca-trust/source/anchors'
     end
